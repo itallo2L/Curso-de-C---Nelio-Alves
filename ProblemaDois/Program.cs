@@ -21,7 +21,20 @@ namespace ProblemaDois
                 $" {produto.Quantidade} unidades, Total: $ {valorTotal.ToString("F2", CultureInfo.InvariantCulture)}");
 
             Console.Write("Digite o número de produtos a ser adicionado ao estoque: ");
-            //var quantidadeDeProduto = produto.
+            var quantidadeDeProdutoAdicionado = int.Parse(Console.ReadLine());
+            produto.AdicionarProdutos(quantidadeDeProdutoAdicionado);
+            valorTotal = produto.ValorTotalEmEstoque();
+
+            Console.WriteLine($"Dados atualizados: {produto.Nome}, $ {produto.Preco.ToString("F2", CultureInfo.InvariantCulture)}," +
+                $" {produto.Quantidade} unidades, Total: $ {valorTotal.ToString("F2", CultureInfo.InvariantCulture)}");
+
+            Console.Write("Digite o número de produtos a ser removido ao estoque: ");
+            var quantidadeDeProdutoRemovido = int.Parse(Console.ReadLine());
+            produto.RemoverProdutos(quantidadeDeProdutoRemovido);
+            valorTotal = produto.ValorTotalEmEstoque();
+
+            Console.WriteLine($"Dados atualizados: {produto.Nome}, $ {produto.Preco.ToString("F2", CultureInfo.InvariantCulture)}," +
+                $" {produto.Quantidade} unidades, Total: $ {valorTotal.ToString("F2", CultureInfo.InvariantCulture)}");
         }
     }
 }
