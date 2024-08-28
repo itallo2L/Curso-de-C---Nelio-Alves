@@ -19,7 +19,7 @@
 
         public void RemoverProdutos(int quantidade)
         {
-            Quantidade -= quantidade;
+            Quantidade = Quantidade - quantidade;
         }
     }
 }
