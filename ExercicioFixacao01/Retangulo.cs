@@ -17,7 +17,7 @@
 
         public double Diagonal()
         {
-            return Math.Sqrt(Math.Pow(Largura, 2) + Math.Pow(Largura, 2));
+            return Math.Sqrt(Math.Pow(Largura, 2) + Math.Pow(Altura, 2));
         }
     }
 }
