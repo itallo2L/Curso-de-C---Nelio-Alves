@@ -11,7 +11,7 @@ namespace ExercicioFixacao03
     {
         public string Nome;
         public double NotaUm, NotaDois, NotaTres;
-        
+
         public double NotaFinal()
         {
             double notaFinal = NotaUm + NotaDois + NotaTres;
