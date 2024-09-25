@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProblemaDois", "ProblemaDoi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioFixacao01", "ExercicioFixacao01\ExercicioFixacao01.csproj", "{D099EFDA-A634-4244-9671-E29514DC6618}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioFixacao02", "ExercicioFixacao02\ExercicioFixacao02.csproj", "{B05D2B50-55F6-4D65-AE69-8079A2E3C801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExercicioFixacao02", "ExercicioFixacao02\ExercicioFixacao02.csproj", "{B05D2B50-55F6-4D65-AE69-8079A2E3C801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioFixacao03", "ExercicioFixacao03\ExercicioFixacao03.csproj", "{E90D82CD-385B-4290-B4F5-54862DBBB12D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{B05D2B50-55F6-4D65-AE69-8079A2E3C801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B05D2B50-55F6-4D65-AE69-8079A2E3C801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B05D2B50-55F6-4D65-AE69-8079A2E3C801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90D82CD-385B-4290-B4F5-54862DBBB12D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90D82CD-385B-4290-B4F5-54862DBBB12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90D82CD-385B-4290-B4F5-54862DBBB12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90D82CD-385B-4290-B4F5-54862DBBB12D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{2D870536-670C-4C88-A11E-B42226F5F278} = {B8999D17-ACC7-4926-A6CD-1E02EC1A9BAE}
 		{D099EFDA-A634-4244-9671-E29514DC6618} = {B8999D17-ACC7-4926-A6CD-1E02EC1A9BAE}
 		{B05D2B50-55F6-4D65-AE69-8079A2E3C801} = {B8999D17-ACC7-4926-A6CD-1E02EC1A9BAE}
+		{E90D82CD-385B-4290-B4F5-54862DBBB12D} = {B8999D17-ACC7-4926-A6CD-1E02EC1A9BAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4DBE349B-F20B-409F-96C1-59767D8DB942}
