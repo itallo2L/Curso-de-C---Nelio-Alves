@@ -22,7 +22,7 @@ namespace ExercicioFixacao03
             aluno.ConsultarSeEstaAprovadoOuNao(notaFinal);
         }
 
-        public static void Escrever(string texto)
+        static void Escrever(string texto)
         {
             Console.Write(texto);
         }
