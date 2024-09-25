@@ -12,24 +12,24 @@ namespace ExercicioDeFixacao02
     {
         static void Main(string[] args)
         {
-            Funcionario funcionario = new Funcionario();
+            Funcionario funcionario = new();
 
-            Console.WriteLine("Nome:");
+            Console.Write("Nome: ");
             funcionario.Nome = Console.ReadLine();
 
-            Console.WriteLine("Salário bruto:");
+            Console.Write("Salário bruto: ");
             funcionario.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.WriteLine("Imposto:");
+            Console.Write("Imposto: ");
             funcionario.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Console.WriteLine($"Funcionário: {funcionario.Nome}, $ {funcionario.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}\n");
+            Console.Write($"\nFuncionário: {funcionario.Nome}, $ {funcionario.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}\n");
 
-            Console.WriteLine($"Digite a porcentagem para aumentar o salário:");
+            Console.Write($"\nDigite a porcentagem para aumentar o salário: ");
             double porcentagem = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             funcionario.AumentarSalario(porcentagem);
 
-            Console.WriteLine($"\nDados atualizados: {funcionario.Nome}, $ {funcionario.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.Write($"\nDados atualizados: {funcionario.Nome}, $ {funcionario.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}\n");
         }
     }
 }

@@ -6,7 +6,7 @@ namespace ProblemaDois
     {
         static void Main(string[] args)
         {
-            Produto produto = new Produto();
+            Produto produto = new();
 
             Console.WriteLine("Entre com os dados do produto:");
             Console.Write("Nome: ");

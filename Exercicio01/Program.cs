@@ -1,4 +1,6 @@
-﻿namespace Exercicio01
+﻿using System.Net.NetworkInformation;
+
+namespace Exercicio01
 {
     class Program
     {
@@ -6,8 +8,8 @@
         velha. */
         static void Main(String[] args)
         {
-            Pessoa pessoaUm = new Pessoa();
-            Pessoa pessoaDois = new Pessoa();
+            Pessoa pessoaUm = new();
+            Pessoa pessoaDois = new();
 
             Console.WriteLine("Digite os dados da primeira pessoa:");
             string entrada = Console.ReadLine();

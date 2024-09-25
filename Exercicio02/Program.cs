@@ -8,8 +8,8 @@ namespace Exercicio02
         médio dos funcionários. */
         static void Main(String[] args)
         {
-            Funcionario funcionarioUm = new Funcionario();
-            Funcionario funcionarioDois = new Funcionario();
+            Funcionario funcionarioUm = new();
+            Funcionario funcionarioDois = new();
 
             Console.WriteLine("Digite os dados do primeiro funcionário:");
             string entradaDeDados = Console.ReadLine();

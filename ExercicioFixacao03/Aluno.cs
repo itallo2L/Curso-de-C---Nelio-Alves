@@ -10,10 +10,8 @@ namespace ExercicioFixacao03
     class Aluno
     {
         public string Nome;
-        public double NotaUm;
-        public double NotaDois;
-        public double NotaTres;
-
+        public double NotaUm, NotaDois, NotaTres;
+        
         public double NotaFinal()
         {
             double notaFinal = NotaUm + NotaDois + NotaTres;

@@ -10,23 +10,21 @@ namespace ExercicioFixacao01
         sua área, perímetro e diagonal.*/
         static void Main(string[] args)
         {
-            Retangulo retangulo = new Retangulo();
+            Retangulo retangulo = new();
 
-            Console.WriteLine("Entre com a largura e altura do retângulo:");
-            string entrada = Console.ReadLine();
+            Console.WriteLine("Entre com a largura e altura do retângulo: ");
 
-            string[] dadosRetangulo = entrada.Split(' ');
-            retangulo.Largura = double.Parse(dadosRetangulo[0], CultureInfo.InvariantCulture);
-            retangulo.Altura = double.Parse(dadosRetangulo[1], CultureInfo.InvariantCulture);
+            retangulo.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            retangulo.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            var area = retangulo.Area();
-            Console.WriteLine($"AREA = {area.ToString("F2", CultureInfo.InvariantCulture)}");
+            double area = retangulo.Area();
+            Console.Write($"AREA = {area.ToString("F2", CultureInfo.InvariantCulture)}");
 
-            var perimetro = retangulo.Perimetro();
-            Console.WriteLine($"PERÍMETRO = {perimetro.ToString("F2", CultureInfo.InvariantCulture)}");
+            double perimetro = retangulo.Perimetro();
+            Console.Write($"\nPERÍMETRO = {perimetro.ToString("F2", CultureInfo.InvariantCulture)}");
 
-            var diagonal = retangulo.Diagonal();
-            Console.WriteLine($"DIAGONAL = {diagonal.ToString("F2", CultureInfo.InvariantCulture)}");
+            double diagonal = retangulo.Diagonal();
+            Console.Write($"\nDIAGONAL = {diagonal.ToString("F2", CultureInfo.InvariantCulture)}\n");
         }
     }
 }

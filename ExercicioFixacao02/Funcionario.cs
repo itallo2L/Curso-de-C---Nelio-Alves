@@ -8,13 +8,13 @@
 
         public double SalarioLiquido()
         {
-            var salarioLiquido = SalarioBruto - Imposto;
+            double salarioLiquido = SalarioBruto - Imposto;
             return salarioLiquido;
         }
 
         public void AumentarSalario(double porcentagem)
         {
-            var aumento = (porcentagem / 100) * SalarioBruto;
+            double aumento = (porcentagem / 100.00) * SalarioBruto;
             SalarioBruto += aumento;
         }
     }
