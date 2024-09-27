@@ -8,22 +8,23 @@ namespace Exercicio02
         médio dos funcionários. */
         static void Main(String[] args)
         {
-            Funcionario funcionarioUm = new();
-            Funcionario funcionarioDois = new();
-
             Console.WriteLine("Digite os dados do primeiro funcionário:");
             string entradaDeDados = Console.ReadLine();
 
             string[] dadosFuncionario = entradaDeDados.Split(',');
-            funcionarioUm.Nome = dadosFuncionario[0];
-            funcionarioUm.Salario = double.Parse(dadosFuncionario[1]);
+            string nomeFuncionarioUm = dadosFuncionario[0];
+            double salarioFuncionarioUm = double.Parse(dadosFuncionario[1]);
+
+            Funcionario funcionarioUm = new(nomeFuncionarioUm, salarioFuncionarioUm);
 
             Console.WriteLine("Digite os dados do segundo funcionário:");
             entradaDeDados = Console.ReadLine();
 
             dadosFuncionario = entradaDeDados.Split(',');
-            funcionarioDois.Nome = dadosFuncionario[0];
-            funcionarioDois.Salario = double.Parse(dadosFuncionario[1]);
+            string nomeFuncionarioDois = dadosFuncionario[0];
+            double salarioFuncionarioDois = double.Parse(dadosFuncionario[1]);
+
+            Funcionario funcionarioDois = new(nomeFuncionarioDois, salarioFuncionarioDois);
 
             var salarioMedio = (funcionarioUm.Salario + funcionarioDois.Salario) / 2;
 

@@ -12,16 +12,16 @@ namespace ExercicioDeFixacao02
     {
         static void Main(string[] args)
         {
-            Funcionario funcionario = new();
-
             Console.Write("Nome: ");
-            funcionario.Nome = Console.ReadLine();
+            string nomeFuncionario = Console.ReadLine();
 
             Console.Write("Salário bruto: ");
-            funcionario.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Console.Write("Imposto: ");
-            funcionario.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Funcionario funcionario = new(nomeFuncionario, salario, imposto);
 
             Console.Write($"\nFuncionário: {funcionario.Nome}, $ {funcionario.SalarioLiquido().ToString("F2", CultureInfo.InvariantCulture)}\n");
 

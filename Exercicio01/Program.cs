@@ -8,22 +8,23 @@ namespace Exercicio01
         velha. */
         static void Main(String[] args)
         {
-            Pessoa pessoaUm = new();
-            Pessoa pessoaDois = new();
-
             Console.WriteLine("Digite os dados da primeira pessoa:");
             string entrada = Console.ReadLine();
 
             string[] dadosPessoa = entrada.Split(' ');
-            pessoaUm.Nome = dadosPessoa[0];
-            pessoaUm.Idade = int.Parse(dadosPessoa[1]);
+            string nomePessoaUm = dadosPessoa[0];
+            int idadePessoaUm = int.Parse(dadosPessoa[1]);
+
+            Pessoa pessoaUm = new(nomePessoaUm, idadePessoaUm);
 
             Console.WriteLine("Digite os dados da segunda pessoa:");
             entrada = Console.ReadLine();
 
             dadosPessoa = entrada.Split(' ');
-            pessoaDois.Nome = dadosPessoa[0];
-            pessoaDois.Idade = int.Parse(dadosPessoa[1]);
+            string nomePessoaDois = dadosPessoa[0];
+            int idadePessoaDois = int.Parse(dadosPessoa[1]);
+
+            Pessoa pessoaDois = new(nomePessoaDois, idadePessoaDois);
 
             Console.WriteLine($"Dados da primeira pessoa: \r\nNome: {pessoaUm.Nome} \r\nIdade: {pessoaUm.Idade}\r\n" +
                 $"Dados da segunda pessoa: \r\nNome: {pessoaDois.Nome} \r\nIdade: {pessoaDois.Idade}");

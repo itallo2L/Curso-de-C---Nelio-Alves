@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Globalization;
 
 namespace ExercicioFixacao03
 {
@@ -11,6 +6,14 @@ namespace ExercicioFixacao03
     {
         public string Nome;
         public double NotaUm, NotaDois, NotaTres;
+
+        public Aluno(string nome, double notaUm, double notaDois, double notaTres)
+        {
+            Nome = nome;
+            NotaUm = notaUm;
+            NotaDois = notaDois;
+            NotaTres = notaTres;
+        }
 
         public double NotaFinal()
         {
