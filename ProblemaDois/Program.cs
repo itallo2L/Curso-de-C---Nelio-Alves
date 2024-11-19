@@ -6,15 +6,15 @@ namespace ProblemaDois
     {
         static void Main(string[] args)
         {
-            Produto produto = new();
-
             Console.WriteLine("Entre com os dados do produto:");
             Console.Write("Nome: ");
-            produto.Nome = Console.ReadLine();
+            string nomeProduto = Console.ReadLine();
             Console.Write("Preço: ");
-            produto.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Quantidade no estoque: ");
-            produto.Quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            int quantidade = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Produto produto = new(nomeProduto, preco, quantidade);
 
             var valorTotal = produto.ValorTotalEmEstoque();
             Console.WriteLine($"Dados do produto: {produto.Nome}, $ {produto.Preco.ToString("F2", CultureInfo.InvariantCulture)}," +

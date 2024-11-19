@@ -6,15 +6,15 @@ namespace ExercicioFixacao03
     {
         static void Main(string[] args)
         {
-            Aluno aluno = new();
-
             Escrever("Nome do aluno: ");
-            aluno.Nome = Console.ReadLine();
+            string nomeAluno = Console.ReadLine();
 
             Escrever("Digite as três notas do aluno:\n");
-            aluno.NotaUm = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            aluno.NotaDois = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            aluno.NotaTres = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double notaUm = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double notaDois = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double notaTres = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Aluno aluno = new(nomeAluno, notaUm, notaDois, notaTres);
 
             double notaFinal = aluno.NotaFinal();
 
@@ -22,7 +22,7 @@ namespace ExercicioFixacao03
             aluno.ConsultarSeEstaAprovadoOuNao(notaFinal);
         }
 
-        public static void Escrever(string texto)
+        static void Escrever(string texto)
         {
             Console.Write(texto);
         }

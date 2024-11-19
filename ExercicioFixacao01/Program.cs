@@ -10,12 +10,12 @@ namespace ExercicioFixacao01
         sua área, perímetro e diagonal.*/
         static void Main(string[] args)
         {
-            Retangulo retangulo = new();
-
             Console.WriteLine("Entre com a largura e altura do retângulo: ");
 
-            retangulo.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            retangulo.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            double altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            Retangulo retangulo = new(largura, altura);
 
             double area = retangulo.Area();
             Console.Write($"AREA = {area.ToString("F2", CultureInfo.InvariantCulture)}");
