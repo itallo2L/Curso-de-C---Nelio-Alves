@@ -14,7 +14,7 @@
         {
             NumeroDaConta = _numeroDaConta;
             NomeDoTitular = _nomeDoTitular;
-            Saldo = _valorDeDeposito;
+            Deposito(_valorDeDeposito);
         }
 
         public double Deposito(double valorDoDeposito)
